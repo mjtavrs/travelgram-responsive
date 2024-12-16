@@ -18,6 +18,10 @@
     padding-inline: var(--py-lg);
 }
 
+.items-center {
+    align-items: center;
+}
+
 .desktop-only {
     display: none;
 }
