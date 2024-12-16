@@ -1,17 +1,17 @@
 .px-base {
-    padding-block: var(--px-base);
+    padding-inline: var(--px-base);
 }
 
 .px-lg {
-    padding-block: var(--px-lg);
+    padding-inline: var(--px-lg);
 }
 
 .py-base {
-    padding-inline: var(--py-base);
+    padding-block: var(--py-base);
 }
 
 .py-lg {
-    padding-inline: var(--py-lg);
+    padding-block: var(--py-lg);
 }
 
 .flex {
