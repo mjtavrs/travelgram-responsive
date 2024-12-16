@@ -1,0 +1,31 @@
+header {
+    & nav {
+        & ul {
+            margin-left: auto;
+
+            & li:first-child {
+                line-height: 0;
+            }
+
+            & li:last-child {
+                & img {
+                    height: 2.5rem;
+                    width: 2.5rem;
+                }
+            }
+        }
+    }
+
+    & div:last-child {
+        & div:first-child {
+            & img {
+                height: 7.5rem;
+                width: 7.5rem;
+            }
+        }
+
+        & div:has(ul[role="list"]) {
+            width: 17.5rem;
+        }
+    }
+}
