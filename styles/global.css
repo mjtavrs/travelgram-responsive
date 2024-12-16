@@ -22,6 +22,12 @@
 
     --fs-md: 0.875rem;
     --fs-xl: 1.5rem;
+
+    --px-base: 1rem;
+    --px-lg: 2rem;
+    --py-base: 1rem;
+    --py-md: 1.25rem;
+    --py-lg: 2rem;
 }
 
 html {
@@ -30,6 +36,23 @@ html {
     font-size: var(--fs-md);
     font-weight: var(--fw-base);
     line-height: 1.7;
+}
+
+header {
+    background-color: var(--surface-color);
+}
+
+main, footer {
+    background-color: var(--bg-color);
+}
+
+ul[role="list"] {
+    list-style: none;
+}
+
+img {
+    display: inline-block;
+    max-width: 100%;
 }
 
 @media (width >= 80em) {

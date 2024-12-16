@@ -1,0 +1,30 @@
+nav {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding-inline: var(--px-base);
+    padding-block: var(--py-md);
+
+    & ul {
+        align-items: center;
+        display: flex;
+        gap: 1rem;
+
+        & li {
+            line-height: 0;
+        }
+
+        & li:nth-child(1) {
+            margin-left: auto;
+
+            & span {
+                display: none;
+            }
+        }
+
+        & img {
+            height: 2.5rem;
+            width: 2.5rem;
+        }
+    }
+}

@@ -1,0 +1,23 @@
+.px-base {
+    padding-block: var(--px-base);
+}
+
+.px-lg {
+    padding-block: var(--px-lg);
+}
+
+.py-base {
+    padding-inline: var(--py-base);
+}
+
+.py-md {
+    padding-inline: var(--py-md);
+}
+
+.py-lg {
+    padding-inline: var(--py-lg);
+}
+
+.desktop-only {
+    display: none;
+}
