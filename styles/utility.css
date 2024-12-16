@@ -18,8 +18,32 @@
     padding-inline: var(--py-lg);
 }
 
+.flex {
+    display: flex;
+}
+
+.grid {
+    display: grid;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
 .items-center {
     align-items: center;
+}
+
+.gap-1 {
+    gap: 1rem;
+}
+
+.gap-1\.5 {
+    gap: 1.5rem;
+}
+
+.leading-1\.25 {
+    line-height: 1.25;
 }
 
 .desktop-only {

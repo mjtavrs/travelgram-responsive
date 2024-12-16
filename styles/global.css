@@ -20,7 +20,7 @@
     --fw-base: 400;
     --fw-bold: 700;
 
-    --fs-md: 0.875rem;
+    --fs-sm: 0.875rem;
     --fs-xl: 1.5rem;
 
     --px-base: 1rem;
@@ -33,17 +33,18 @@
 html {
     color: var(--text-color-primary);
     font-family: var(--ff-sans);
-    font-size: var(--fs-md);
+    font-size: var(--fs-sm);
     font-weight: var(--fw-base);
     line-height: 1.7;
 }
 
-header {
-    background-color: var(--surface-color);
+h1 {
+    font-size: var(--fs-xl);
+    font-weight: var(--fw-bold);
 }
 
-main, footer {
-    background-color: var(--bg-color);
+p {
+    font-size: var(--fs-sm);
 }
 
 ul[role="list"] {
