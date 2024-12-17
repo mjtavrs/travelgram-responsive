@@ -15,31 +15,33 @@
 </head>
 <body>
     <header>
-        <nav>
+        <nav class="flex items-center">
             <img src="assets/brand/logo.svg" alt="Logo do Travelgram">
-            <ul role="list">
-                <li>
+            <ul role="list" class="flex items-center gap-1 ml-auto">
+                <li class="flex items-center gap-1">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M21.5306 20.4693L16.8365 15.7762C18.1971 14.1428 18.8755 12.0478 18.7307 9.92691C18.5859 7.80604 17.629 5.82265 16.0591 4.38932C14.4892 2.95599 12.4271 2.18308 10.3019 2.23138C8.17663 2.27968 6.15181 3.14547 4.64864 4.64864C3.14547 6.15181 2.27968 8.17663 2.23138 10.3019C2.18308 12.4271 2.95599 14.4892 4.38932 16.0591C5.82265 17.629 7.80604 18.5859 9.92691 18.7307C12.0478 18.8755 14.1428 18.1971 15.7762 16.8365L20.4693 21.5306C20.539 21.6003 20.6218 21.6556 20.7128 21.6933C20.8038 21.731 20.9014 21.7504 21 21.7504C21.0985 21.7504 21.1961 21.731 21.2871 21.6933C21.3782 21.6556 21.4609 21.6003 21.5306 21.5306C21.6003 21.4609 21.6556 21.3782 21.6933 21.2871C21.731 21.1961 21.7504 21.0985 21.7504 21C21.7504 20.9014 21.731 20.8038 21.6933 20.7128C21.6556 20.6218 21.6003 20.539 21.5306 20.4693ZM3.74997 10.5C3.74997 9.16495 4.14585 7.8599 4.88755 6.74987C5.62925 5.63984 6.68346 4.77467 7.91686 4.26378C9.15026 3.75289 10.5075 3.61922 11.8168 3.87967C13.1262 4.14012 14.3289 4.78299 15.2729 5.727C16.2169 6.671 16.8598 7.87374 17.1203 9.18311C17.3807 10.4925 17.2471 11.8497 16.7362 13.0831C16.2253 14.3165 15.3601 15.3707 14.2501 16.1124C13.14 16.8541 11.835 17.25 10.5 17.25C8.71037 17.248 6.99463 16.5362 5.72919 15.2708C4.46375 14.0053 3.75196 12.2896 3.74997 10.5Z"
                             fill="#6C6C6C" />
                     </svg>
-                    <span>
+                    <span class="desktop-only">
                         Explorar
                     </span>
                 </li>
-                <li>
-                    <a href="#">Minhas viagens</a>
+                <li class="desktop-only">
+                    <a href="#">
+                        Minhas viagens
+                    </a>
                 </li>
                 <li>
                     <img src="assets/user/profile.png" alt="Foto de perfil de Isabela Torres">
                 </li>
             </ul>
         </nav>
-        <div>
-            <div>
+        <div class="flex flex-columns">
+            <div class="flex flex-columns gap-1">
                 <img src="assets/user/profile.png" alt="Foto de perfil de Isabela Torres">
-                <div>
+                <div class="flex flex-columns">
                     <h1>
                         Isabela Torres
                     </h1>
@@ -51,20 +53,20 @@
                 </div>
             </div>
             <div>
-                <ul role="list">
-                    <li>
+                <ul role="list" class="flex flex-columns gap-1">
+                    <li class="flex items-center">
                         <img src="assets/icons/MapPin.svg" alt="Localização do usuário">
                         <span>
                             São Paulo, Brasil
                         </span>
                     </li>
-                    <li>
+                    <li class="flex items-center gap-1">
                         <img src="assets/icons/AirplaneTilt.svg" alt="QUantidade de países visitados pelo usuário">
                         <span>
                             37 países
                         </span>
                     </li>
-                    <li>
+                    <li class="flex items-center gap-1">
                         <img src="assets/icons/Image.svg" alt="Quantidade de fotos do usuário">
                         <span>
                             240 fotos
@@ -74,7 +76,7 @@
             </div>
         </div>
     </header>
-    <main>
+    <main class="even-columns posts-gap">
         <img src="assets/user/posts/image_01.png">
         <img src="assets/user/posts/image_02.png">
         <img src="assets/user/posts/image_03.png">
@@ -88,11 +90,11 @@
         <img src="assets/user/posts/image_11.png">
         <img src="assets/user/posts/image_12.png">
     </main>
-    <footer>
+    <footer class="flex flex-columns items-center gap-1">
         <p>
             Travelgram &copy; 2024
         </p>
-        <div>
+        <div class="flex gap-1">
             <a href="#">
                 Termos de uso
             </a>

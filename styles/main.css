@@ -1,0 +1,11 @@
+main {
+    padding-block: 1rem;
+    padding-inline: 1rem;
+}
+
+@media (width >= 80em) {
+    main {
+        padding-block: 1.5rem;
+        padding-inline: 2rem;
+    }
+}

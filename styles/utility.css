@@ -1,0 +1,53 @@
+.ml-auto {
+    margin-left: auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-columns {
+    flex-direction: column;
+}
+
+.grid {
+    display: grid;
+}
+
+.even-columns {
+    display: grid;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.gap-1 {
+    gap: 1rem;
+}
+
+/* .even-columns {
+
+} */
+
+.posts-gap {
+    gap: 1rem;
+}
+
+.desktop-only {
+    display: none;
+}
+
+@media (width >= 80em) {
+    .even-columns {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    .posts-gap {
+        gap: 1.5rem;
+    }
+
+    .desktop-only {
+        display: inline-block;
+    }
+}

@@ -1,0 +1,12 @@
+footer {
+    padding-block: 1rem;
+}
+
+@media (width >= 80em) {
+    footer {
+        flex-direction: row !important;
+        justify-content: space-between;
+        padding-block: 1.5rem;
+        padding-inline: 2rem;
+    }
+}

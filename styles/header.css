@@ -1,0 +1,89 @@
+header {
+    background-color: var(--surface-color);
+
+    & nav {
+        padding: 1rem;
+
+        & ul {
+            & li {
+                line-height: 0;
+            }
+
+            & li:has(img) {
+                & img {
+                    height: 2.5rem;
+                    width: 2.5rem;
+                }
+            }
+        }
+    }
+
+    & nav + div {
+        gap: 2rem;
+        padding: 2rem;
+
+        & div:first-child {
+            & img {
+                height: 7.5rem;
+                width: 7.5rem;
+            }
+
+            & div {
+                gap: 0.5rem;
+            }
+        }
+
+        & div:has(ul[role="list"]) {
+            width: 17.5rem;
+
+            & ul {
+                & li {
+                    gap: 0.5rem;
+                }
+            }
+        }
+    }
+}
+
+@media (width >= 80em) {
+    header {
+        & nav {
+            & ul {
+                & li:has(svg) {
+                    cursor: pointer;
+                    
+                    &:hover {
+                        & svg {
+                            & path {
+                                fill: var(--brand-color);
+                            }
+                        }
+
+                        & span {
+                            color: var(--brand-color);
+                        }
+                    }
+                }
+            }
+        }
+
+        & nav + div {
+            align-items: center;
+            gap: 0;
+            flex-direction: row !important;
+            justify-content: space-between;
+
+            & div:first-child {
+                align-items: center;
+                flex-direction: row !important;
+                gap: 2rem;
+                max-width: 37rem;
+
+                & img {
+                    height: 11rem;
+                    width: 11rem;
+                }
+            }
+        }
+    }
+}
